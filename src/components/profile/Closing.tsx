@@ -1,4 +1,7 @@
 import { motion } from "framer-motion";
+import resumeAsset from "@/assets/resume.pdf.asset.json";
+import bioAsset from "@/assets/executive-bio.pdf.asset.json";
+
 
 const contacts = [
   { label: "Based in", value: "Houston, Texas" },
@@ -75,7 +78,7 @@ export function Closing() {
                 Documents
               </div>
               <a
-                href="/documents/resume.pdf"
+                href={resumeAsset.url}
                 download
                 className="group flex items-center gap-3 text-ivory transition-colors hover:text-gold"
               >
@@ -95,7 +98,7 @@ export function Closing() {
                 <span className="font-display text-base">Download Resume</span>
               </a>
               <a
-                href="/documents/executive-bio.pdf"
+                href={bioAsset.url}
                 download
                 className="group flex items-center gap-3 text-ivory transition-colors hover:text-gold"
               >
