@@ -1,5 +1,6 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { Monogram } from "./Monogram";
+import portraitAsset from "@/assets/suresh-portrait.jpg.asset.json";
 
 const stats = [
   { value: "$3B+", label: "Capital Projects Led" },
