@@ -1,4 +1,5 @@
 import { motion, useReducedMotion } from "framer-motion";
+import { Monogram } from "./Monogram";
 
 const stats = [
   { value: "$3B+", label: "Capital Projects Led" },
@@ -14,9 +15,7 @@ export function Hero() {
       <BackgroundArt reduce={!!reduce} />
 
       <header className="relative z-10 flex items-center justify-between">
-        <div className="font-display text-base tracking-tight text-ivory/90">
-          SV
-        </div>
+        <Monogram size={40} className="text-gold" />
         <div className="eyebrow text-gold/80">Executive Profile</div>
       </header>
 

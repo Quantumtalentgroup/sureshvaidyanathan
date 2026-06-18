@@ -1,19 +1,23 @@
 import { motion } from "framer-motion";
+import { MapPin, Linkedin, Mail } from "lucide-react";
 import resumeAsset from "@/assets/resume.pdf.asset.json";
 import bioAsset from "@/assets/executive-bio.pdf.asset.json";
+import { Monogram } from "./Monogram";
 
 
 const contacts = [
-  { label: "Based in", value: "Houston, Texas" },
+  { label: "Based in", value: "Houston, Texas", icon: MapPin },
   {
     label: "LinkedIn",
     value: "linkedin.com/in/sureshvaidyanathan",
     href: "https://www.linkedin.com/",
+    icon: Linkedin,
   },
   {
     label: "Direct",
     value: "vaidyanath@hotmail.com",
     href: "mailto:vaidyanath@hotmail.com",
+    icon: Mail,
   },
 ];
 
@@ -45,9 +49,11 @@ export function Closing() {
           <div className="md:col-span-5">
             <div className="space-y-px overflow-hidden border-y border-ivory/10 bg-ivory/10">
               {contacts.map((c) => {
+                const Icon = c.icon;
                 const Inner = (
-                  <div className="flex items-baseline justify-between gap-6 bg-navy-deep px-2 py-6 transition-colors duration-300 hover:bg-navy md:px-4 md:py-7">
-                    <span className="text-[0.7rem] tracking-[0.28em] text-ivory/55 uppercase">
+                  <div className="flex items-center justify-between gap-6 bg-navy-deep px-2 py-6 transition-colors duration-300 hover:bg-navy md:px-4 md:py-7">
+                    <span className="flex items-center gap-3 text-[0.7rem] tracking-[0.28em] text-ivory/55 uppercase">
+                      <Icon size={14} strokeWidth={1.4} className="text-gold/60 group-hover:text-gold transition-colors" aria-hidden />
                       {c.label}
                     </span>
                     <span className="font-display text-lg text-ivory group-hover:text-gold md:text-xl">
@@ -121,8 +127,11 @@ export function Closing() {
           </div>
         </div>
 
-        <footer className="mt-32 flex flex-col items-start justify-between gap-3 border-t border-ivory/10 pt-8 text-[0.7rem] tracking-[0.22em] text-ivory/45 uppercase md:flex-row md:items-center">
-          <div>Suresh Vaidyanathan</div>
+        <footer className="mt-32 flex flex-col items-start justify-between gap-6 border-t border-ivory/10 pt-8 text-[0.7rem] tracking-[0.22em] text-ivory/45 uppercase md:flex-row md:items-center">
+          <div className="flex items-center gap-4">
+            <Monogram size={32} className="text-gold/80" />
+            <span>Suresh Vaidyanathan</span>
+          </div>
           <div>EVP · Renewable Fuels, Emerging Energy & Aviation</div>
           <div>© {new Date().getFullYear()}</div>
         </footer>
