@@ -77,22 +77,44 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      {
+        title:
+          "Suresh Vaidyanathan — EVP, Renewable Fuels, Emerging Energy & Aviation",
+      },
+      {
+        name: "description",
+        content:
+          "Global energy executive leading renewable fuels, sustainable aviation fuel, and enterprise transformation across North America, Europe, Asia, and the Middle East.",
+      },
+      { name: "author", content: "Suresh Vaidyanathan" },
+      {
+        property: "og:title",
+        content:
+          "Suresh Vaidyanathan — EVP, Renewable Fuels, Emerging Energy & Aviation",
+      },
+      {
+        property: "og:description",
+        content:
+          "Driving global energy transformation through renewable innovation, operational excellence, and enterprise-scale leadership.",
+      },
+      { property: "og:type", content: "profile" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
+      { rel: "stylesheet", href: appCss },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      {
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com",
+        crossOrigin: "anonymous",
+      },
       {
         rel: "stylesheet",
-        href: appCss,
+        href: "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter+Tight:wght@300;400;500;600&display=swap",
       },
     ],
   }),
+
   shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
