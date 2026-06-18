@@ -9,8 +9,8 @@ const contacts = [
   },
   {
     label: "Direct",
-    value: "contact@sureshvaidyanathan.com",
-    href: "mailto:contact@sureshvaidyanathan.com",
+    value: "vaidyanath@hotmail.com",
+    href: "mailto:vaidyanath@hotmail.com",
   },
 ];
 
