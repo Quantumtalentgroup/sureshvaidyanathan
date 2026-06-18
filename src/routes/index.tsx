@@ -1,29 +1,52 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { SmoothScroll } from "../components/profile/SmoothScroll";
+import { Hero } from "../components/profile/Hero";
+import { Narrative } from "../components/profile/Narrative";
+import { Impact } from "../components/profile/Impact";
+import { GlobalMap } from "../components/profile/GlobalMap";
+import { Boards } from "../components/profile/Boards";
+import { Philosophy } from "../components/profile/Philosophy";
+import { Closing } from "../components/profile/Closing";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Your App" },
-      { name: "description", content: "Replace this with a one-sentence description of your app." },
-      { property: "og:title", content: "Your App" },
-      { property: "og:description", content: "Replace this with a one-sentence description of your app." },
+      {
+        title:
+          "Suresh Vaidyanathan — EVP, Renewable Fuels, Emerging Energy & Aviation",
+      },
+      {
+        name: "description",
+        content:
+          "Executive profile of Suresh Vaidyanathan — global energy leader in renewable fuels, sustainable aviation fuel, and enterprise transformation.",
+      },
+      {
+        property: "og:title",
+        content:
+          "Suresh Vaidyanathan — EVP, Renewable Fuels, Emerging Energy & Aviation",
+      },
+      {
+        property: "og:description",
+        content:
+          "Driving global energy transformation through renewable innovation, operational excellence, and enterprise-scale leadership.",
+      },
     ],
   }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <SmoothScroll>
+      <main className="relative bg-navy-deep text-ivory">
+        <Hero />
+        <Narrative />
+        <Impact />
+        <GlobalMap />
+        <Boards />
+        <Philosophy />
+        <Closing />
+      </main>
+    </SmoothScroll>
   );
 }
