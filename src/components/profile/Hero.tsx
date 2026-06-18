@@ -1,5 +1,6 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { Monogram } from "./Monogram";
+import portraitAsset from "@/assets/suresh-portrait.jpg.asset.json";
 
 const stats = [
   { value: "$3B+", label: "Capital Projects Led" },
@@ -19,32 +20,51 @@ export function Hero() {
         <div className="eyebrow text-gold/80">Executive Profile</div>
       </header>
 
-      <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-1 flex-col justify-center py-16">
-        <motion.div
-          initial={reduce ? false : { opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
-        >
-          <div className="eyebrow mb-6">Senior energy executive</div>
-          <h1 className="font-display text-[clamp(3rem,9vw,8.5rem)] leading-[0.92] font-light text-ivory">
-            Suresh
-            <br />
-            <span className="italic text-ivory/95">Vaidyanathan</span>
-          </h1>
-        </motion.div>
+      <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-1 flex-col items-center justify-center gap-12 py-16 lg:flex-row lg:gap-16">
+        <div className="flex flex-1 flex-col justify-center">
+          <motion.div
+            initial={reduce ? false : { opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
+          >
+            <div className="eyebrow mb-6">Senior energy executive</div>
+            <h1 className="font-display text-[clamp(3rem,9vw,8.5rem)] leading-[0.92] font-light text-ivory">
+              Suresh
+              <br />
+              <span className="italic text-ivory/95">Vaidyanathan</span>
+            </h1>
+          </motion.div>
+
+          <motion.div
+            initial={reduce ? false : { opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
+            className="mt-10 max-w-2xl"
+          >
+            <div className="mb-5 h-px w-16 bg-gold/70" />
+            <p className="text-lg leading-relaxed text-ivory/85 md:text-xl">
+              Renewable Fuels, Emerging Energy & Aviation. Driving global energy
+              transformation through renewable innovation, operational
+              excellence, and enterprise-scale leadership.
+            </p>
+          </motion.div>
+        </div>
 
         <motion.div
-          initial={reduce ? false : { opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-10 max-w-2xl"
+          initial={reduce ? false : { opacity: 0, scale: 0.96 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.2, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
+          className="relative shrink-0"
         >
-          <div className="mb-5 h-px w-16 bg-gold/70" />
-          <p className="text-lg leading-relaxed text-ivory/85 md:text-xl">
-            Renewable Fuels, Emerging Energy & Aviation. Driving global energy
-            transformation through renewable innovation, operational
-            excellence, and enterprise-scale leadership.
-          </p>
+          <div className="relative overflow-hidden rounded-sm">
+            <img
+              src={portraitAsset.url}
+              alt="Suresh Vaidyanathan"
+              className="h-auto w-64 object-cover md:w-80 lg:w-96"
+            />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-navy-deep/40 via-transparent to-transparent" />
+          </div>
+          <div className="absolute -inset-3 -z-10 rounded-sm border border-gold/20" />
         </motion.div>
       </div>
 
