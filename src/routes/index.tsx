@@ -7,6 +7,7 @@ import { GlobalMap } from "../components/profile/GlobalMap";
 import { Boards } from "../components/profile/Boards";
 import { Philosophy } from "../components/profile/Philosophy";
 import { Closing } from "../components/profile/Closing";
+import { SectionDivider } from "../components/profile/SectionDivider";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -56,11 +57,17 @@ function Index() {
     <SmoothScroll>
       <main className="relative bg-navy-deep text-ivory">
         <Hero />
+        <SectionDivider label="The Executive" />
         <Narrative />
+        <SectionDivider label="Impact" />
         <Impact />
+        <SectionDivider label="Global Reach" />
         <GlobalMap />
+        <SectionDivider label="Governance" />
         <Boards />
+        <SectionDivider label="Philosophy" />
         <Philosophy />
+        <SectionDivider label="Connect" />
         <Closing />
       </main>
     </SmoothScroll>
