@@ -69,6 +69,52 @@ export function Closing() {
                 );
               })}
             </div>
+
+            <div className="mt-10 space-y-3">
+              <div className="text-[0.7rem] tracking-[0.28em] text-ivory/45 uppercase">
+                Documents
+              </div>
+              <a
+                href="/documents/resume.pdf"
+                download
+                className="group flex items-center gap-3 text-ivory transition-colors hover:text-gold"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  className="text-ivory/55 group-hover:text-gold transition-colors"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="7 10 12 15 17 10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+                <span className="font-display text-base">Download Resume</span>
+              </a>
+              <a
+                href="/documents/executive-bio.pdf"
+                download
+                className="group flex items-center gap-3 text-ivory transition-colors hover:text-gold"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  className="text-ivory/55 group-hover:text-gold transition-colors"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="7 10 12 15 17 10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+                <span className="font-display text-base">Download Executive Bio</span>
+              </a>
+            </div>
           </div>
         </div>
 
