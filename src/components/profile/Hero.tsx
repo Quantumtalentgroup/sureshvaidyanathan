@@ -25,7 +25,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
         >
-          <div className="eyebrow mb-6">Executive Vice President</div>
+          <div className="eyebrow mb-6">Senior energy executive</div>
           <h1 className="font-display text-[clamp(3rem,9vw,8.5rem)] leading-[0.92] font-light text-ivory">
             Suresh
             <br />
