@@ -11,10 +11,7 @@ import { Closing } from "../components/profile/Closing";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      {
-        title:
-          "Suresh Vaidyanathan — EVP, Renewable Fuels, Emerging Energy & Aviation",
-      },
+      { title: "Suresh Vaidyanathan — EVP, Renewable Fuels & Aviation" },
       {
         name: "description",
         content:
@@ -22,18 +19,37 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:title",
-        content:
-          "Suresh Vaidyanathan — EVP, Renewable Fuels, Emerging Energy & Aviation",
+        content: "Suresh Vaidyanathan — EVP, Renewable Fuels & Aviation",
       },
       {
         property: "og:description",
         content:
           "Driving global energy transformation through renewable innovation, operational excellence, and enterprise-scale leadership.",
       },
+      { property: "og:url", content: "https://sureshvaidyanathan.lovable.app/" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://sureshvaidyanathan.lovable.app/" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          name: "Suresh Vaidyanathan",
+          jobTitle:
+            "EVP, Renewable Fuels, Emerging Energy & Aviation",
+          url: "https://sureshvaidyanathan.lovable.app/",
+          email: "mailto:vaidyanth@hotmail.com",
+          sameAs: ["https://www.linkedin.com/in/sureshvaidyanathan/"],
+        }),
+      },
     ],
   }),
   component: Index,
 });
+
 
 function Index() {
   return (

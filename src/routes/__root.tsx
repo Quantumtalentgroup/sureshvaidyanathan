@@ -77,36 +77,20 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      {
-        title:
-          "Suresh Vaidyanathan — EVP, Renewable Fuels, Emerging Energy & Aviation",
-      },
-      {
-        name: "description",
-        content:
-          "Global energy executive leading renewable fuels, sustainable aviation fuel, and enterprise transformation across North America, Europe, Asia, and the Middle East.",
-      },
       { name: "author", content: "Suresh Vaidyanathan" },
-      {
-        property: "og:title",
-        content:
-          "Suresh Vaidyanathan — EVP, Renewable Fuels, Emerging Energy & Aviation",
-      },
-      {
-        property: "og:description",
-        content:
-          "Driving global energy transformation through renewable innovation, operational excellence, and enterprise-scale leadership.",
-      },
       { property: "og:type", content: "profile" },
+      { property: "og:site_name", content: "Suresh Vaidyanathan" },
       { name: "twitter:card", content: "summary_large_image" },
-      { title: "Suresh Vaidyanathan" },
-      { property: "og:title", content: "Suresh Vaidyanathan" },
-      { name: "twitter:title", content: "Suresh Vaidyanathan" },
-      { name: "description", content: "Executive Vision presents a premium one-page executive profile for Suresh Vaidyanathan, showcasing global energy leadership." },
-      { property: "og:description", content: "Executive Vision presents a premium one-page executive profile for Suresh Vaidyanathan, showcasing global energy leadership." },
-      { name: "twitter:description", content: "Executive Vision presents a premium one-page executive profile for Suresh Vaidyanathan, showcasing global energy leadership." },
-      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/s3f6JOfd4qV8jQWeqjwOhGCbavh2/social-images/social-1781748111522-SV.webp" },
-      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/s3f6JOfd4qV8jQWeqjwOhGCbavh2/social-images/social-1781748111522-SV.webp" },
+      {
+        property: "og:image",
+        content:
+          "https://storage.googleapis.com/gpt-engineer-file-uploads/s3f6JOfd4qV8jQWeqjwOhGCbavh2/social-images/social-1781748111522-SV.webp",
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://storage.googleapis.com/gpt-engineer-file-uploads/s3f6JOfd4qV8jQWeqjwOhGCbavh2/social-images/social-1781748111522-SV.webp",
+      },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -122,6 +106,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       },
     ],
   }),
+
 
   shellComponent: RootShell,
   component: RootComponent,
