@@ -43,8 +43,8 @@ export function Hero() {
           >
             <div className="mb-5 h-px w-16 bg-gold/70" />
             <p className="text-lg leading-relaxed text-ivory/85 md:text-xl">
-              Renewable Fuels, Emerging Energy & Aviation. Driving global energy
-              transformation through renewable innovation, operational
+              Refining, Renewable Fuels, Emerging Energy & Aviation. Driving global energy
+              transformation through innovation, operational
               excellence, and enterprise-scale leadership.
             </p>
           </motion.div>

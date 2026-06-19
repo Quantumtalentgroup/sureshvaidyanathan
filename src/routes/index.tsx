@@ -25,7 +25,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Driving global energy transformation through renewable innovation, operational excellence, and enterprise-scale leadership.",
+          "Driving global energy transformation through innovation, operational excellence, and enterprise-scale leadership.",
       },
       { property: "og:url", content: "https://sureshvaidyanathan.lovable.app/" },
     ],
@@ -42,7 +42,7 @@ export const Route = createFileRoute("/")({
           jobTitle:
             "EVP, Renewable Fuels, Emerging Energy & Aviation",
           url: "https://sureshvaidyanathan.lovable.app/",
-          email: "mailto:vaidyanth@hotmail.com",
+          email: "mailto:vaidyanth123@gmail.com",
           sameAs: ["https://www.linkedin.com/in/sureshvaidyanathan/"],
         }),
       },
