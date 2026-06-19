@@ -64,7 +64,7 @@ const items: Item[] = [
     metric: "$1B",
     headline: "Enterprise cost reduction",
     detail:
-      "Delivered approximately one billion in enterprise-wide cost reduction initiatives.",
+      "Supported in delivering approximately one billion in enterprise-wide cost reduction initiatives.",
     icon: Scissors,
     span: "md:col-span-6",
   },

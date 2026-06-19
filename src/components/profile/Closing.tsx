@@ -15,8 +15,8 @@ const contacts = [
   },
   {
     label: "Direct",
-    value: "vaidyanath@hotmail.com",
-    href: "mailto:vaidyanath@hotmail.com",
+    value: "vaidyanth123@gmail.com",
+    href: "mailto:vaidyanth123@gmail.com",
     icon: Mail,
   },
 ];

@@ -76,7 +76,7 @@ export function GlobalMap() {
             <div className="eyebrow mb-5">Global Leadership</div>
             <h2 className="font-display text-4xl leading-tight font-light text-ivory md:text-5xl">
               Operating across
-              <span className="italic text-gold"> four continents</span>.
+              <span className="italic text-gold"> four regions</span>.
             </h2>
             <p className="mt-6 max-w-md text-base leading-relaxed text-ivory/70">
               International business transformation spanning North America,
