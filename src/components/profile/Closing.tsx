@@ -132,7 +132,7 @@ export function Closing() {
             <Monogram size={32} className="text-gold/80" />
             <span>Suresh Vaidyanathan</span>
           </div>
-          <div>EVP · Renewable Fuels, Emerging Energy & Aviation</div>
+          <div>Senior Executive · Renewable Fuels, Emerging Energy & Aviation</div>
           <div>© {new Date().getFullYear()}</div>
         </footer>
       </div>

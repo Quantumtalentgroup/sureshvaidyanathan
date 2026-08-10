@@ -80,6 +80,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "author", content: "Suresh Vaidyanathan" },
       { property: "og:type", content: "profile" },
       { property: "og:site_name", content: "Suresh Vaidyanathan" },
+      { name: "robots", content: "noindex, nofollow" },
       { name: "twitter:card", content: "summary_large_image" },
       {
         property: "og:image",
