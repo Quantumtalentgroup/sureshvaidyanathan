@@ -42,7 +42,15 @@ export default {
     try {
       const handler = await getServerEntry();
       const response = await handler.fetch(request, env, ctx);
-      return await normalizeCatastrophicSsrResponse(response);
+      const normalized = await normalizeCatastrophicSsrResponse(response);
+      // Site-wide opt-out of search indexing (covers non-HTML responses too).
+      const headers = new Headers(normalized.headers);
+      headers.set("X-Robots-Tag", "noindex, nofollow, noarchive, nosnippet");
+      return new Response(normalized.body, {
+        status: normalized.status,
+        statusText: normalized.statusText,
+        headers,
+      });
     } catch (error) {
       console.error(error);
       return new Response(renderErrorPage(), {
