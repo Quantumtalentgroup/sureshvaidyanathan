@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sureshvaidyanathan.lovable.app/sitemap.xml
+# The site is intentionally kept out of search results via
+# <meta name="robots" content="noindex, nofollow"> and the
+# X-Robots-Tag response header. Crawling stays allowed so search
+# engines can see the noindex directive and drop existing pages.
